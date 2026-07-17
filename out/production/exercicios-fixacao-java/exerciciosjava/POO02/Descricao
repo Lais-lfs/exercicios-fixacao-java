@@ -1,0 +1,85 @@
+Exercício: Sistema de Pagamentos de uma Loja Virtual
+
+Uma loja virtual está desenvolvendo um novo módulo para processar pagamentos. Atualmente, o sistema aceita
+diferentes formas de pagamento e, no futuro, novas formas poderão ser adicionadas.
+
+Cada pagamento possui um cliente e um valor associado. Ao ser processado, o sistema deve executar a lógica
+específica daquela forma de pagamento e, ao final, emitir um comprovante contendo o nome do cliente e o valor pago.
+
+Algumas formas de pagamento exigem uma etapa de autenticação antes que o pagamento possa ser realizado,
+enquanto outras não possuem essa necessidade.
+
+As formas de pagamento disponíveis inicialmente são:
+- Cartão de Crédito
+- PIX
+- Boleto
+
+O comportamento esperado de cada uma é:
+- Cartão de Crédito: Durante o processamento, deve validar a senha do cartão e, em seguida, realizar o pagamento.
+    Mensagens esperadas:
+        - Validando senha do cartão...
+        - Pagamento realizado no cartão de crédito.
+- PIX: Durante o processamento, deve validar a chave PIX antes de efetuar o pagamento.
+    Mensagens esperadas:
+        - Validando chave PIX...
+        - Pagamento realizado via PIX.
+- Boleto: Não necessita de autenticação. Apenas gera o boleto para pagamento.
+    Mensagem esperada:
+        - Boleto gerado com sucesso.
+
+Após qualquer pagamento, o sistema deve emitir um comprovante semelhante a este:
+Pagamento realizado para João.
+Valor: R$ 150.00
+
+Requisitos gerais:
+- Seu sistema deve permitir que vários pagamentos sejam armazenados juntos e processados em sequência.
+- A implementação deve ser flexível o suficiente para que novas formas de pagamento possam ser adicionadas
+    futuramente sem exigir alterações na lógica principal do programa.
+- Evite criar soluções que dependam de verificar manualmente o tipo de cada objeto durante o processamento.
+
+Desafio Extra ⭐
+A loja decidiu aceitar uma nova forma de pagamento:
+- Carteira Digital: ela realiza uma autenticação por reconhecimento facial antes de concluir o pagamento.
+    Mensagens esperadas:
+    - Validando reconhecimento facial...
+    - Pagamento realizado pela carteira digital.
+
+Seu sistema deve aceitar essa nova forma de pagamento sem que seja necessário alterar a lógica principal responsável pelo processamento dos pagamentos.
+
+Desafio Extra ⭐⭐
+A empresa deseja registrar tudo o que acontece durante o processamento.
+Ao finalizar a execução do programa, deve ser exibido algo semelhante a:
+
+===== RELATÓRIO =====
+
+Total de pagamentos: 4
+
+Valor total recebido: R$ 980.00
+
+Pagamentos autenticados: 3
+
+Pagamentos sem autenticação: 1
+
+Tente implementar esse relatório de forma que ele continue funcionando automaticamente quando novas formas de pagamento forem adicionadas.
+
+Desafio Extra ⭐⭐⭐
+Alguns clientes pertencem ao programa de fidelidade da loja.
+Esses clientes recebem um desconto antes do pagamento:
+
+Cartão de Crédito: 5%
+PIX: 10%
+Boleto: sem desconto
+Carteira Digital: 7%
+
+O comprovante deve informar:
+
+Cliente: João
+
+Valor original: R$ 200.00
+
+Desconto: R$ 20.00
+
+Valor final: R$ 180.00
+
+Projete sua solução para que novos meios de pagamento possam definir descontos diferentes sem
+modificar as classes já existentes.
