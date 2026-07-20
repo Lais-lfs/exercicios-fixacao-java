@@ -9,15 +9,12 @@ public class Gato extends Animal {
     }
 
     @Override
-    public void emitirSom() {
-        System.out.println("Miando!!");
+    public String emitirSom() {
+        return "Miando!!";
     }
 
     @Override
     public String toString() {
-        return "Gato: " +
-                "raça = '" + raca + '\'' +
-                ", nome = '" + nome + '\'' +
-                ", idade = " + idade + " anos.";
+        return "Gato: " + super.toString() + ", raça = '" + raca + '\'';
     }
 }

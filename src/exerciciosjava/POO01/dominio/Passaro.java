@@ -9,15 +9,12 @@ public class Passaro extends Animal {
     }
 
     @Override
-    public void emitirSom() {
-        System.out.println("Cantando!!");
+    public String emitirSom() {
+        return "Cantando!!";
     }
 
     @Override
     public String toString() {
-        return "Pássaro: " +
-                "espácie = '" + especie + '\'' +
-                ", nome = '" + nome + '\'' +
-                ", idade = " + idade + " anos.";
+        return "Pássaro: " + super.toString() + ", espécie = '" + especie + '\'';
     }
 }

@@ -9,13 +9,15 @@ public abstract class Animal {
         this.idade = idade;
     }
 
-    public abstract void emitirSom();
+    public String getNome() {
+        return nome;
+    }
+
+    public abstract String emitirSom();
 
     @Override
     public String toString() {
-        return "Animal {" +
-                "nome = '" + nome + '\'' +
-                ", idade = " + idade +
-                '}';
+        return "nome = '" + nome + '\'' +
+                ", idade = " + idade + " anos";
     }
 }

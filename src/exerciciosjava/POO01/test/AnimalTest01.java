@@ -19,7 +19,10 @@ public class AnimalTest01 {
 
         for (Animal animal : animals) {
             System.out.println(animal);
-            animal.emitirSom();
+
+            String emitirSom = animal.emitirSom();
+            System.out.println(animal.getNome() + " está " + emitirSom.toLowerCase());
+
             System.out.println("-".repeat(30));
         }
     }
