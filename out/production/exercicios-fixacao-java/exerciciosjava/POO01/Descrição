@@ -1,0 +1,16 @@
+🐾 1. Sons da Natureza (Nível: Iniciante)
+
+*Descrição do problema:* Crie uma hierarquia de animais onde cada espécie
+reage a um comando genérico de emitir som de maneira distinta.
+
+* *Objetivo de aprendizado:* Praticar a *sobrescrita de métodos* e entender como o Java
+decide qual método chamar em tempo de execução.
+
+* *Requisitos:*
+  1. Crie uma superclasse Animal com o método emitirSom().
+  2. Implemente as subclasses Cachorro, Gato e Passaro, cada uma fornecendo sua própria
+    implementação do som.
+  3. Em uma classe de teste, utilize um array de Animal para armazenar instâncias das
+    subclasses e percorra-o invocando o som polimorficamente.
+* *Dicas:* Lembre-se de que a JVM utiliza a *Vinculação Dinâmica* (Dynamic Binding) para encontrar o método real do objeto na memória, ignorando o tipo da variável de referência.
+* *Conceitos:* Herança, Sobrescrita (@Override), Referência de superclasse.

@@ -1,0 +1,20 @@
+💰 2. Folha de Pagamento Corporativa (Nível: Intermediário)
+
+*Descrição do problema:* Desenvolva um sistema que calcule os rendimentos semanais de
+    diferentes tipos de funcionários (Assalariados, Horistas e Comissionados) de forma genérica.
+
+* *Objetivo de aprendizado:* Utilizar *classes abstratas* para definir um contrato comum
+    para uma hierarquia de herança.
+
+* *Requisitos:*
+  1. Declare a classe *abstrata* Employee (ou Funcionario) com um método abstrato vencimentos().
+  2. As subclasses devem implementar o cálculo: SalariedEmployee (salário fixo),
+    HourlyEmployee (horas trabalhadas + extras) e CommissionEmployee (porcentagem de vendas).
+  3. O sistema deve ser capaz de aplicar um bônus de 10% apenas para funcionários que sejam do
+    tipo BasePlusCommissionEmployee durante o processamento.
+
+* *Exemplo:* Ao percorrer a lista de funcionários, o método vencimentos() deve retornar
+    o valor correto para cada subtipo sem a necessidade de múltiplos blocos if/else.
+* *Dicas:* Utilize o operador *instanceof* e realize o *downcasting* apenas quando for
+    necessário acessar métodos exclusivos de uma subclasse específica.
+* *Conceitos:* Classes e Métodos Abstratos, instanceof, Downcasting.
