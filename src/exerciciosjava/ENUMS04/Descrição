@@ -1,0 +1,15 @@
+Exercício 4: Calculadora de Operações Matemáticas (Médio)
+Objetivo: Associar comportamento (métodos) diretamente às constantes do Enum.
+
+Enunciado:
+
+Crie um enum chamado Operacao que represente as quatro operações matemáticas básicas:
+SOMA, SUBTRACAO, MULTIPLICACAO e DIVISAO.
+
+Cada constante deve implementar um método abstrato double calcular(double a, double b).
+
+Dica: Em Java, você pode declarar um método abstrato no corpo do enum e sobrescrevê-lo dentro de cada constante.
+
+Na operação de DIVISAO, adicione uma validação para lançar uma ArithmeticException caso o divisor (b) seja zero.
+
+Crie uma classe de teste que utilize essas operações passando dois números e exibindo o resultado.
