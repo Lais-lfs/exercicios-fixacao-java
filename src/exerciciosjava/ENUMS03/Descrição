@@ -1,0 +1,13 @@
+Exercício 2: Níveis de Prioridade com Atributos (Fácil para Médio)
+Objetivo: Adicionar atributos e construtores a um Enum para associar valores customizados a cada constante.
+
+Enunciado:
+
+- Crie um enum chamado Prioridade com três níveis: BAIXA, MEDIA e ALTA.
+- Cada nível deve ter um atributo inteiro chamado valor (ex: BAIXA = 1, MEDIA = 2, ALTA = 3).
+- Adicione um construtor no enum para inicializar esse valor e um método getter getValor().
+
+- Crie um método estático no enum chamado Prioridade porValor(int valor) que receba um número inteiro e
+retorne a constante correspondente (ou lance uma exceção / retorne null se o valor for inválido).
+
+- Teste o enum imprimindo o nome da constante e o seu respectivo valor numérico.
