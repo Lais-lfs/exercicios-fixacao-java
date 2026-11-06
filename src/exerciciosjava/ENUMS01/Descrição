@@ -1,0 +1,7 @@
+1. Crie um enum chamado DiaDaSemana com os sete dias da semana
+(SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO).
+
+2. Crie uma classe principal (Main) com um método que receba um DiaSemana e
+imprima se é "Dia útil" ou "Fim de semana".
+
+3. No método main, teste a função passando diferentes dias da semana.
