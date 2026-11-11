@@ -1,0 +1,18 @@
+Exercício 6: Formas de Pagamento com Comportamento Polimórfico e Constantes Dinâmicas (Avançado)
+Objetivo: Combinar Enums com Interfaces para aplicar polimorfismo e lógica condicional avançada baseada em taxas.
+
+Enunciado:
+- Crie uma interface chamada ProcessadorPagamento com um método double calcularValorFinal(double valorBruto).
+- Crie um enum chamado FormaPagamento que implemente essa interface.
+As constantes devem ser: DINHEIRO, CREDITO e PIX.
+- Cada constante deve calcular o valor final aplicando regras específicas:
+
+    - DINHEIRO: Aplica um desconto de 10% sobre o valor bruto.
+    - CREDITO: Aplica um acréscimo de 5% de juros sobre o valor bruto.
+    - PIX: Aplica um desconto de 15% sobre o valor bruto.
+
+- Adicione um atributo em cada constante (via construtor) que represente o percentual de desconto ou juros,
+e utilize esse atributo dentro do método sobrescrito da interface.
+
+- Crie um programa principal que receba uma forma de pagamento e um valor, e imprima o valor final
+calculado polimorficamente através do enum.
