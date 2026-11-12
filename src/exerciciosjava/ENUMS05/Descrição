@@ -1,0 +1,15 @@
+Exercício 5: Máquina de Estados de um Pedido (Avançado)
+Objetivo: Controlar regras de transição de estados usando Enums e encapsulamento de lógica de negócio.
+
+Enunciado:
+- Crie um enum chamado StatusPedido com os estados: AGUARDANDO_PAGAMENTO, PAGO, ENVIADO, ENTREGUE e CANCELADO.
+- Implemente um método no enum chamado boolean podeTransicionarPara(StatusPedido novoStatus) que define as
+regras de negócio permitidas:
+
+    - AGUARDANDO_PAGAMENTO pode ir para PAGO ou CANCELADO.
+    - PAGO pode ir para ENVIADO ou CANCELADO.
+    - ENVIADO só pode ir para ENTREGUE.
+    - ENTREGUE e CANCELADO são estados finais (não podem transicionar para mais nenhum).
+
+- Crie uma classe Pedido que contenha o StatusPedido atual e um método mudarStatus(StatusPedido novoStatus)
+que valide a transição usando a regra criada no enum (lançando uma exceção se a transição for inválida).
